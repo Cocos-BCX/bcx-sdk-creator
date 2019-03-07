@@ -1,0 +1,13 @@
+{
+    "name": "bcx",
+    "version": "0.0.1",
+    "beta": false,
+    "description": "BCX for Creator",
+    "main": "main.js",
+    "author": "sdkbox.com",
+    "main-menu": {
+        "i18n:MAIN_MENU.package.title/BCX/Install": {
+            "message": "bcx:install"
+        }
+    }
+}
