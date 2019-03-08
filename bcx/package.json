@@ -8,6 +8,9 @@
     "main-menu": {
         "i18n:MAIN_MENU.package.title/BCX/Install": {
             "message": "bcx:install"
+        },
+        "i18n:MAIN_MENU.package.title/BCX/Help": {
+            "message": "bcx:help"
         }
     }
 }
