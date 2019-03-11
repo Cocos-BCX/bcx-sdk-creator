@@ -1,6 +1,9 @@
-# BCX For Creator
+# Cocos-BCX For Cocos Creator
 
 ## 简介
+
+[Cocos-BCX](https://www.cocosbcx.io/)，以下简称 BCX
+[Cocos Creator](https://cocos2d-x.org/creator)
 
 本工程提供给用户可使用的 BCX For Cocos Creator 插件, 以及一个在 Cocos Creator 上联接 BCX 的 Sample 工程.
 
