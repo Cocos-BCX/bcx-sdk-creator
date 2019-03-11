@@ -11,7 +11,7 @@
 ![](./document/imgs/bcx_package.png)
 
 
-`sample` : 这是 Sample 工程, 里面有调用 BCX 的基本方式.
+`sample` : 这是 Sample 工程, 里面有调用 BCX 的基本方式.
 
 ## BCX For Cocos Creator 配置要求
 
@@ -20,12 +20,12 @@ CocosCreator 2.0+
 ## BCX For Cocos Creator 插件的使用
 
 * 将 `bcx` 文件夹放在 Creator 工程的 packages 目录下.
-* 安装好后, 在 Creator 的菜单中, 可以找到如下菜单
+* 安装好后, 在 Creator 的菜单中, 可以找到如下菜单
 
 ![](./document/imgs/bcx_menu.png)
 
-* 点击菜单 `Install`, 就会在 assets 目录下生成一个文件夹 `bcx`.
-* 现在就可以在自己的代码中调用 bcx 相关的接口了.
+* 点击菜单 `Install`, 就会在 assets 目录下生成一个文件夹 `bcx`.
+* 现在就可以在自己的代码中调用 bcx 相关的接口了.
 
 ## 本工程中 sample 的说明
 
@@ -38,5 +38,5 @@ BCX For Creator  | BCX JS SDK
 ---------------- | ----------------
 0.0.1            | 1.3.0.2
 
-如上第一行说明, BCX For Creator 0.0.1 是基于 BCX JS SDK 1.3.0.2 而生成的.
+如上第一行说明, BCX For Creator 0.0.1 是基于 BCX JS SDK 1.3.0.2 而生成的.
 
