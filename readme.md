@@ -2,8 +2,8 @@
 
 ## 简介
 
-[Cocos-BCX](https://www.cocosbcx.io/)，以下简称 BCX
-[Cocos Creator](https://cocos2d-x.org/creator)
+1. [Cocos-BCX](https://www.cocosbcx.io/)：下一代游戏数字经济平台，以下简称 BCX。
+2. [Cocos Creator](https://cocos2d-x.org/creator)：以内容创作为核心的一体化游戏开发工具。
 
 本工程提供给用户可使用的 BCX For Cocos Creator 插件, 以及一个在 Cocos Creator 上联接 BCX 的 Sample 工程.
 
