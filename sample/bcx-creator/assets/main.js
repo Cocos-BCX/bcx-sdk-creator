@@ -47,6 +47,7 @@ cc.Class({
     // onLoad () {},
 
     start () {
+        const self = this;
         const bcx = new BCX({
             default_ws_node:"ws://47.93.62.96:8020",
             ws_node_list:[
@@ -58,6 +59,17 @@ cc.Class({
             }], 
             faucet_url:"http://47.93.62.96:3000",
             auto_reconnect:true                     
+        });
+        bcx.init({
+            callback: res => {
+                if (1 != res.code) {
+                    self.log("ERR, BCX connect failed:" + res.code);
+                } else {
+                    // const data = res.data;
+                    // cc.log(res);
+                    self.log("SUC, BCX connected");
+                }
+            }
         });
         this.bcx = bcx;
     },
