@@ -1,3 +1,5 @@
+[中文](https://github.com/Cocos-BCX/bcx-sdk-creator/blob/master/readme.cn.md "中文")
+
 # Cocos-BCX For Cocos Creator
 
 ## 简介
