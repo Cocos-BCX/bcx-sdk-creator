@@ -1,7 +1,7 @@
-[中文](https://github.com/Cocos-BCX/bcx-sdk-creator/blob/master/readme.cn.md "中文")
 
 # Cocos-BCX For Cocos Creator
 
+[中文](https://github.com/Cocos-BCX/bcx-sdk-creator/blob/master/readme.cn.md "中文")
 ## Introduction
 
 1. [Cocos-BCX](https://www.cocosbcx.io/): The platform for the next generation of game digital economy, hereinafter referred to as BCX.
