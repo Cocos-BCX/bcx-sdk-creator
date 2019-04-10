@@ -1,5 +1,7 @@
 # Cocos-BCX For Cocos Creator
 
+
+[English](https://github.com/Cocos-BCX/bcx-sdk-creator/blob/master/readme.md "English")
 ## 简介
 
 1. [Cocos-BCX](https://www.cocosbcx.io/)：下一代游戏数字经济平台，以下简称 BCX。
