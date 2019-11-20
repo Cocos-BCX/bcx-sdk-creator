@@ -45,6 +45,7 @@ CocosCreator 2.0+
 
 | BCX For Creator | BCX JS SDK |
 | --------------- | ---------- |
+| 0.0.2           | 2.1.4      |
 | 0.0.1           | 1.3.0.2    |
 
-As mentioned in the first line above, BCX For Creator 0.0.1 is generated based on BCX JS SDK 1.3.0.2.
+As mentioned in the above table, BCX For Creator 0.0.1 is generated based on BCX JS SDK 1.3.0.2.
