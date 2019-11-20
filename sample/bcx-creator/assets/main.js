@@ -48,19 +48,26 @@ cc.Class({
 
     start () {
         const self = this;
-        const bcx = new BCX({
-            default_ws_node:"ws://47.93.62.96:8020",
+        const bcx = new window.BCX({
             ws_node_list:[
-                {url:"ws://47.93.62.96:8020",name:"cocos新链"}
+                {url:"ws://test.cocosbcx.net",name:"Cocos - China - Beijing"}
             ],
             networks:[{
                 core_asset:"COCOS",
-                chain_id:"9fc429a48b47447afa5e6618fde46d1a5f7b2266f00ce60866f9fdd92236e137" 
-            }], 
-            faucet_url:"http://47.93.62.96:3000",
-            auto_reconnect:true                     
+                chain_id:"c1ac4bb7bd7d94874a1cb98b39a8a582421d03d022dfa4be8c70567076e03ad0" 
+            }],
+            faucet_url:"http://test-faucet.cocosbcx.net",
+            auto_reconnect:true,
+            real_sub:true,
+            check_cached_nodes_data:false
         });
-        bcx.init().then(res=>{
+        bcx.init({
+            real_sub:true,
+            subscribeToRpcConnectionStatusCallback:res=>{
+                console.info("subscribeToRpcConnectionStatusCallback res:");
+                console.info(JSON.stringify(res));
+            }
+        }).then(res=>{
             if (1 != res.code) {
                 self.log("ERR, BCX connect failed:" + res.code);
             } else {
@@ -75,8 +82,8 @@ cc.Class({
         const bcx = this.bcx;
 
         bcx.passwordLogin({
-            account:"test1",  //query.loginUserName,
-            password:"12345678"
+            account:"huang",
+            password:"111111"
         }).then(res=>{
             if (1 != res.code) {
                 self.log("ERR, passwordLogin:" + res.code);
@@ -108,43 +115,17 @@ cc.Class({
         });
     },
 
-    onButtonTransferFee() {
-        const bcx = this.bcx;
-        const self = this;
-
-        bcx.transferAsset({
-            proposeAccount: "",
-            toAccount: "test2",
-            amount: 1,
-            assetId: "COCOS",
-            memo: "creator test",
-            feeAssetId: "COCOS",
-            isPropose: false,
-            onlyGetFee: true
-        }).then(res=>{
-            if (1 != res.code) {
-                self.log("ERR, transferAssetFee:" + res.code);
-            } else {
-                const data = res.data;
-                self.log("SUC, transferAssetFee");
-                self.log(data.fee_amount + " " + data.fee_symbol);
-            }
-        });
-    },
-
     onButtonTransfer() {
         const bcx = this.bcx;
         const self = this;
 
         bcx.transferAsset({
-            proposeAccount: "",
-            toAccount: "test2",
+            fromAccount: "huang",
+            toAccount: "hugoo",
             amount: 1,
             assetId: "COCOS",
             memo: "creator test",
-            feeAssetId: "COCOS",
-            isPropose: false,
-            onlyGetFee: false
+            isPropose: false
         }).then(res=>{
             if (1 != res.code) {
                 self.log("ERR, transferAsset:" + res.code);
@@ -153,6 +134,13 @@ cc.Class({
                 self.log("SUC, transferAsset");
             }
         });
+    },
+
+    onButtonFakeTest() {
+        const bcx = this.bcx;
+        const self = this;
+
+        cc.log("faketest")
     },
 
     log: function(s) {
