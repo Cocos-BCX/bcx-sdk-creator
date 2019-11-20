@@ -48,7 +48,7 @@ cc.Class({
 
     start () {
         const self = this;
-        const bcx = new window.BCX({
+        const bcx = new BCX({
             ws_node_list:[
                 {url:"ws://test.cocosbcx.net",name:"Cocos - China - Beijing"}
             ],
