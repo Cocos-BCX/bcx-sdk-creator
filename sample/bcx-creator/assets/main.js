@@ -82,7 +82,7 @@ cc.Class({
         const bcx = this.bcx;
 
         bcx.passwordLogin({
-            account:"huang",
+            account:"hugo1111",
             password:"111111"
         }).then(res=>{
             if (1 != res.code) {
@@ -120,8 +120,8 @@ cc.Class({
         const self = this;
 
         bcx.transferAsset({
-            fromAccount: "huang",
-            toAccount: "hugoo",
+            fromAccount: "hugo1111",
+            toAccount: "huang",
             amount: 1,
             assetId: "COCOS",
             memo: "creator test",
